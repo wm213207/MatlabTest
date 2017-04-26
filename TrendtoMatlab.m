@@ -48,23 +48,23 @@ CVData = [MVPV(:,8) MVPV(:,10) MVPV(:,12) MVPV(:,14) MVPV(:,16) MVPV(:,18)];
 
 save IOData.mat MVData CVData sampletime -v7.3
 
-figure
-plot(timeq,MVPV(:,2))
-hold on
-plot(timeq,MVPV(:,4))
-hold on
-plot(timeq,MVPV(:,6))
+%figure
+%plot(timeq,MVPV(:,2))
+%hold on
+%plot(timeq,MVPV(:,4))
+%hold on
+%plot(timeq,MVPV(:,6))
 % 
 % clf
-figure
-plot(timeq,MVPV(:,8))
-hold on
-plot(timeq,MVPV(:,10))
-hold on
-plot(timeq,MVPV(:,12))
-hold on
-plot(timeq,MVPV(:,14))
-hold on
-plot(timeq,MVPV(:,16))
-hold on
-plot(timeq,MVPV(:,18))
+%figure
+%plot(timeq,MVPV(:,8))
+%hold on
+%plot(timeq,MVPV(:,10))
+%hold on
+%plot(timeq,MVPV(:,12))
+%hold on
+%plot(timeq,MVPV(:,14))
+%hold on
+%plot(timeq,MVPV(:,16))
+%hold on
+%plot(timeq,MVPV(:,18))
