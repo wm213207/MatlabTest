@@ -6,16 +6,16 @@ close all
 load('ABBtrenddata.mat')
 numvar = 9;
 
-% % Define the timespan
-% data = ABBtrenddata(:,[7, 8]); % longest timespan
-% cleandata = data(data~=0); % clean zeros
-% trend = reshape(cleandata,[],2);
-% sampletime = 1; % s sample time
-% 
-% for i = 1:1:length(trend(:,1))
-%     DateV = datevec(trend(i,1));
-%     trend(i,1) = DateV(4)*3600+DateV(5)*60+DateV(6);
-% end
+% Define the timespan
+data = ABBtrenddata(:,[7, 8]); % longest timespan
+cleandata = data(data~=0); % clean zeros
+trend = reshape(cleandata,[],2);
+sampletime = 1; % s sample time
+
+for i = 1:1:length(trend(:,1))
+    DateV = datevec(trend(i,1));
+    trend(i,1) = DateV(4)*3600+DateV(5)*60+DateV(6);
+end
 % 
 % time = trend(:,1)-trend(1,1);
 % timeq = time(1,1):sampletime:time(length(time(:,1)),1);
